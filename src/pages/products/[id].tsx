@@ -2,7 +2,7 @@ import Header from "@/Components/Header";
 import ProductDetails from "@/Components/ProductDetails";
 import { ProductType, fetchProduct, fetchProducts } from "@/services/products";
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
-import { Head } from "next/document";
+import { Head } from "next/head";
 import { ReactNode } from "react";
 import { Container } from "reactstrap";
 
