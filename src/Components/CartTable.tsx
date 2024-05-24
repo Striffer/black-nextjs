@@ -20,11 +20,11 @@ const CartTableRow = (props: {
             <Row className="align-items-center">
                 <Col xs={4} md={2} lg={1}>
                     <Image
-                    src={props.entry.product.imageUrl}
-                    alt={props.entry.product.name}
-                    height={500}
-                    width={600}
-                    layout="intrinsic"
+                        src={props.entry.product.imageUrl}
+                        alt={props.entry.product.name}
+                        height={500}
+                        width={600}
+                        layout="intrinsic"
                     />
                 </Col>
 
@@ -73,8 +73,8 @@ export default function CartTable() {
                 return [
                     ...list,
                     {
-                    product,
-                    quantity: 1
+                        product,
+                        quantity: 1
                     }
                 ]
             }
@@ -90,15 +90,16 @@ export default function CartTable() {
     return (
         <Table responsive className="align-middle" style={{ minWidth: '32rem' }}>
             <thead>
-            <tr>
-                <th>Produto</th>
-                <th>Preço</th>
-                <th>Qtd.</th>
-                <th>Total</th>
-            </tr>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                    <th>Qtd.</th>
+                    <th>Total</th>
+                </tr>
             </thead>
+
             <tbody>
-                    {cartEntries.map(entry => <CartTableRow key={entry.product.id} entry={entry} />)}
+                {cartEntries.map(entry => <CartTableRow key={entry.product.id} entry={entry} />)}
             </tbody>
         </Table>
     )
