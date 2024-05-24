@@ -32,10 +32,10 @@ export const CartContextProvider = (props: {
         const productIndex = cart.findIndex(product => product.id === productId)
 
         if (productIndex !== -1) {
-            const updetedCart = [...cart]
-            updetedCart.splice(productIndex, 1)
-            localStorage.setItem('shopping-cart', JSON.stringify(updetedCart))
-            setCart(updetedCart)
+            const updatedCart = [...cart]
+            updatedCart.splice(productIndex, 1)
+            localStorage.setItem('shopping-cart', JSON.stringify(updatedCart))
+            setCart(updatedCart)
         }
     }
 
