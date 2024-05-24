@@ -18,19 +18,19 @@ const CartTableRow = (props: {
     <tr>
         <td>
             <Row className="align-items-center">
-            <Col xs={4} md={2} lg={1}>
-                <Image
-                src={props.entry.product.imageUrl}
-                alt={props.entry.product.name}
-                height={500}
-                width={600}
-                layout="intrinsic"
-                />
-            </Col>
+                <Col xs={4} md={2} lg={1}>
+                    <Image
+                    src={props.entry.product.imageUrl}
+                    alt={props.entry.product.name}
+                    height={500}
+                    width={600}
+                    layout="intrinsic"
+                    />
+                </Col>
 
-            <Col xs={8} md={10} lg={11}>
-                {props.entry.product.name}
-            </Col>
+                <Col xs={8} md={10} lg={11}>
+                    {props.entry.product.name}
+                </Col>
             </Row>        
         </td>
 
